@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project( pfe2020 )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+set(SOURCES src/main.cpp )
+add_executable( pfe2020 ${SOURCES} )
+target_link_libraries( pfe2020 ${OpenCV_LIBS} )
